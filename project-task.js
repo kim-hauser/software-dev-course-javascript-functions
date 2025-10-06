@@ -72,3 +72,54 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// REFACTORED Script 1 - Greeting multiple users
+
+let newNames = ['Alice', 'Bob', 'Charlie']
+
+function greet(firstNames) {
+   firstNames.forEach(indName => {
+      console.log(`Welcome, ${indName}!`);
+   });
+}
+
+// Calls function using the array of names assigned above:
+
+greet(newNames);
+
+// REFACTORED Script 2 - Sum calculation
+
+function addAndTotal(num1, num2) {
+   sum = num1 + num2
+   return console.log(`The sum of ${num1} and ${num2} is ${sum}`)
+};
+
+//Calls function utilizing ANY number, but utilizes what is passed:
+
+addAndTotal(5, 10);
+
+// REFACTORED Script 3 - Product calculation
+
+function findProduct (num1, num2) {
+   let newProduct = num1 * num2
+   return console.log(`The product of ${num1} and ${num2} is ${newProduct}`)
+};
+
+//Calls function utilizing ANY number, but utilizes what is passed:
+
+findProduct(5, 10);
+
+// REFACTORED Script 4 - Print names from a list
+
+let names3 = ["Alice", "Bob", "Charlie"];
+console.log("Names in the list:");
+function iterateNames(newestNames) {
+   newestNames.forEach (name => {
+      console.log(`${name}`)
+   })
+}
+
+//Pulls specified items from array
+
+iterateNames(names3)
+
